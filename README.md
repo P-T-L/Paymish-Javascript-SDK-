@@ -1,6 +1,6 @@
-# Paymish Node.js SDK
+# Paymish JavaScript SDK
 
-The official Node.js SDK for integrating with the **Paymish API**. Built with **zero runtime dependencies** using native `fetch` and modern asynchronous JavaScript standards.
+The official JavaScript SDK for integrating with the **Paymish API**. Built with **zero runtime dependencies** using native `fetch` and modern asynchronous JavaScript standards.
 
 **Official Developer API docs:** https://docs.paymish.com/
 
@@ -23,7 +23,7 @@ The official Node.js SDK for integrating with the **Paymish API**. Built with **
 Install via `npm`:
 
 ```bash
-npm install paymish-node.js-sdk
+npm install paymish-js-sdk
 ```
 
 > **Requirement:** Node.js `>= 18.0.0` is required for native `fetch` and `AbortSignal.timeout` support.
@@ -33,7 +33,7 @@ npm install paymish-node.js-sdk
 ## Quick Start
 
 ```javascript
-const Paymish = require("paymish-node.js-sdk");
+const Paymish = require("paymish-js-sdk");
 
 // Initialize the client
 const paymish = new Paymish({
@@ -2645,7 +2645,7 @@ const updatedAccount = await paymish.virtualAccounts.updateVirtualAccount(
 All API-level failures, non-JSON response errors, and request timeouts throw a `PaymishError`.
 
 ```javascript
-const Paymish = require("paymish-node.js-sdk");
+const Paymish = require("paymish-js-sdk");
 const { PaymishError } = Paymish;
 
 try {
